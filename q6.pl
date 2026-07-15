@@ -1,10 +1,5 @@
-% questao 7
+% questao 6
 
-%calcular a multiplicacao entre dois numeros
-%recursivamente
-
-multiplica(X, 1, Z) :- Z is X, !. %caso base
-multiplica(X, Y, Z):-
-    NovoY is Y-1,
-	multiplica(X, NovoY, ZParcial),
-	Z is ZParcial + X.
+num(N,positivo) :- N>0, !.
+num(0,nulo) :- !.
+num(N,negativo) :- N<0. % nao precisa corte pq ja é o ultimo

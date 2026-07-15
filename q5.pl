@@ -1,5 +1,10 @@
-% questao 6
+joga(ana,volei).
+joga(bia,tenis).
+joga(ivo,basquete).
+joga(eva,volei).
+joga(leo,tenis).
 
-num(N,positivo) :- N>0, !.
-num(0,nulo) :- !.
-num(N,negativo) :- N<0. % nao precisa corte pq ja é o ultimo
+
+% consulta
+% trace, joga(P,X), joga(leo,X), P\=leo.
+% trace, joga(leo,X), joga(P,X), P\=leo.
