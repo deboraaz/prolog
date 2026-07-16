@@ -6,7 +6,7 @@ max([X], X).
 %para head
 max([H | T], M) :-
     max(T, MaiorCauda), %descobre maior do resto
-    H > MaiorCauda,
+    H >= MaiorCauda,
     M = H.
 
 %para cauda
